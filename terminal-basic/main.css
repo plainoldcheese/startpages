@@ -1,0 +1,289 @@
+:root {
+    --base04:black;
+    --base03: grey;
+    --base02: grey;
+    --dark1: grey;
+    --dark2: grey;
+    --base01: grey;
+    --base00: grey;
+    --base0: grey;
+    --base1: grey;
+    --base2: white;
+    --base3: white;
+    --red: red;
+    --green: green;
+    --yellow: yellow;
+    --blue: blue;
+    --magenta: magenta;
+    --cyan: cyan;
+    --orange: orange;
+}
+
+
+@media (max-width: 500px) {
+    .links-container {
+        flex-direction: column !important;
+        order: 2 !important;        
+        /* width: 100vw !important;  */
+    }
+    .terminal-screen{
+        border: none !important;
+    }
+    #search {
+        order: 1 !important;
+    }
+
+    #middle {
+        vertical-align: none !important;
+    }
+
+    #inner {
+        margin-left: 0  !important;
+        margin-right: 0  !important;
+    }
+
+    .user {
+        order: 0 !important;
+    }
+
+
+}
+
+/* elements */
+body {
+    background-color: var(--base03);
+    font-family: "Lucidia Console", monospace;
+    color: var(--base0);
+    font-size: 16px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: "";
+}
+
+input {
+    background-color: var(--base03);
+    caret-color: var(--base0);
+    outline: none;
+    border: none;
+    color: var(--base0);
+    font-family: "Lucidia Console", monospace;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.terminal-screen {
+    overflow: hidden;
+    border: 5px solid var(--base00);
+    padding: 5px;
+    
+}
+
+#outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+
+#search {
+    display: flex;
+    width: 100%;
+    order: 2;
+}
+
+#search-bar {
+    order: 4;
+    overflow: hidden;
+    background: var(--base03);
+    font-family: "Lucidia Console", monospace;
+    display: flex;
+}
+
+
+
+.links-container {
+    order: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.main,
+.tech,
+.social,
+.media,
+.programming,
+.gaming {
+    width: auto;
+    position: relative;
+    padding: 10px;
+    transition: background-color 0.3s;
+    color: var(--cyan);
+}
+
+.main:hover,
+.tech:hover,
+.social:hover,
+.media:hover,
+.programming:hover,
+.gaming:hover {
+    background-color: var(--base03);
+}
+
+.main {
+    order: 0;
+}
+
+.social {
+    order: 1;
+}
+
+.tech {
+    order: 2;
+}
+
+.programming {
+    order: 3;
+}
+
+.media {
+    order: 4;
+}
+
+.gaming {
+    order: 5;
+}
+
+/* hyperlinks */
+
+a:link,
+a:visited {
+    color: var(--base0);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+/* "syntax highlighting" */
+
+.user {
+    display: flex;
+    order: 0;
+}
+
+.unix-user {
+    color: var(--orange);
+    order: 0;
+}
+
+.unix-syntax1 {
+    color: var(--base0);
+    order: 1;
+}
+
+.PC-name {
+    color: var(--blue);
+    order: 2;
+}
+
+.unix-syntax2 {
+    color: var(--base0);
+    order: 3;
+}
+
+/* blinking cursor */
+
+.cursor {
+    animation: blinker 1s step-start infinite;
+    color: var(--base0);
+    order: 4;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* section headings */
+
+#main-h, #varsity-h, #social-h, #tech-h, #programming-h, #media-h, #gaming-h{
+    font-weight: bold;
+
+}
+#main-h {
+    color: var(--magenta);
+}
+
+#social-h {
+    color: var(--orange);
+}
+
+#tech-h {
+    color: var(--cyan);
+}
+
+#programming-h {
+    color: var(--red);
+}
+
+#media-h {
+    color: var(--yellow);
+}
+
+#gaming-h {
+    color: var(--blue);
+}
+
+#themes {
+    background-color: var(--base03);
+    border: none;
+}
+
+.separators {
+    color: var(--base01);
+}
+
+.button{
+    background-color: transparent;
+    border: 0;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 4px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+  
+.button:hover {
+    background-color: var(--base00);
+    color: var(--base03);
+}

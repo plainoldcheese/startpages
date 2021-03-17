@@ -1,0 +1,70 @@
+\
+@media only screen and (max-width: 600px) {
+  .container{
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+  }
+  #left{
+	  display: none;
+  }
+}
+
+* {
+	padding: 0px;
+	margin: 0%;
+}
+
+body {
+	cursor: url(cursors/Link-select-2-.cur), auto;
+	background-image: url("gifs/bgstar.gif");
+	background-repeat: round;
+	color: white;
+	font-family: serif;
+	font-size: 18pt;
+}
+
+h1{
+	font-size: 36px;
+	font-family: cursive;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+a {
+	text-decoration: none;
+	cursor: url(cursors/American-online-link-select.cur), auto;
+	font-family: serif;
+	color: inherit;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+.container {
+	border: 8px solid transparent;
+	padding: 48px;
+	border-image: url(gifs/texture_0005.gif) 30 round;
+	margin: 0 auto;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	max-height: 80vh;
+	max-width: 40ch;
+	background-color: plum;
+	color: black;
+}
+.column{
+	flex: 50%;
+}
+.row{
+	display: flex;
+	width: inherit;
+}
+#right{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+#right, #left{
+	width: 20ch;
+}
+

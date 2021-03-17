@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+* {
+    padding: 0px;
+    margin: 0%;
+}
+
+::selection {
+    color: inherit;
+    background: #EEC3A6;
+}
+
+#draggable {
+    position: absolute;
+}
+
+#draggableheader {
+    padding: 10px;
+    cursor: move;
+}
+
+body {
+    background-image: url(./bg.png);
+    background-attachment: fixed;
+    color: #594D4F;
+    font-family: 'David Libre', serif;
+    font-size: 18pt;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    padding-top: 8px;
+    font-size: 27px;
+    font-family: 'David Libre', serif;
+    text-decoration: none;
+}
+
+h2:hover {
+    color: #A0838B;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'David Libre', serif;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    border: 12px solid #73A2A2;
+    position: fixed;
+    top: 20vh;
+    left: 40vw;
+    padding: 48px;
+    /* center
+    margin: 0 auto;
+    margin-top: 10vh;
+	margin-bottom: 10vh;
+	*/
+    max-width: 40ch;
+    background-color: #FFE7E5;
+    color: #594D4F;
+}
+
+.indent {
+    padding-left: 8px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
